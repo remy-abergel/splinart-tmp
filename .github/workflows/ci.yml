@@ -22,7 +22,7 @@ jobs:
       - name: check whether if cppcheck_err.txt is empty or not
         run: if [[ -s cppcheck_err.txt ]]; then cat cppcheck_err.txt; exit 1; fi
   tests:
-    needs: pre-commit
+    needs: [pre-commit, cppcheck]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
