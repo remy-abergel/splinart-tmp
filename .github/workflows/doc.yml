@@ -29,6 +29,7 @@ jobs:
           path: doc/build/html
   # Deployment job
   deploy:
+    if: github.repository == 'remy-abergel/splinart-tmp' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
