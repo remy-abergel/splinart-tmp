@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/remy-abergel/splinart-tmp/compare/v0.1.0...v0.1.1) (2025-01-31)
+
+
+### Bug Fixes
+
+* minor change in comment ([#20](https://github.com/remy-abergel/splinart-tmp/issues/20)) ([985a4e2](https://github.com/remy-abergel/splinart-tmp/commit/985a4e2c0984d971040c2a878b1147ca2e4fb01e))
+
 ## [0.1.0](https://github.com/remy-abergel/splinart-tmp/compare/v0.0.1...v0.1.0) (2025-01-31)
 
 
