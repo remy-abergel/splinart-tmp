@@ -1,6 +1,13 @@
 name: "CI: build & deploy doc"
 
-on: pull_request
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+    workflow_dispatch:
 
 # Allow one concurrent deployment
 concurrency:
@@ -10,6 +17,8 @@ concurrency:
 jobs:
   # Build job
   build:
+    # don't run on fork
+    if: github.repository == 'remy-abergel/splinart-tmp'
     # Specify runner +  build & upload the static files as an artifact
     runs-on: ubuntu-latest
     steps:
